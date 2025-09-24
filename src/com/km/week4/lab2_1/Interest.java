@@ -19,10 +19,10 @@ public class Interest {
 	public Interest (double principal, double rate, int time){
 
 	//validate neagtive/interger for pirincal/no strings
-		
+		if (principal<0||rate<0||time<0){throw new IllegalArgumentException("Cannot be less than 0");}else {
 	this.principal=principal;
 	this.rate=rate;
-	this.time=time;
+	this.time=time;}
 
 
 	}
